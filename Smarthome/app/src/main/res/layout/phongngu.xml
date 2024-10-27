@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="338dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/chuphongngu" />
+
+    <Button
+        android:id="@+id/batdenngu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:textStyle="bold"
+        android:text="Bật đèn"
+        app:layout_constraintEnd_toEndOf="@+id/denngu"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/denngu"
+        app:layout_constraintTop_toBottomOf="@+id/denngu" />
+
+    <ImageView
+        android:id="@+id/denngu"
+        android:layout_width="75dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/circle_light_off" />
+
+    <Button
+        android:id="@+id/trove2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Trở về"
+        android:textStyle="bold"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="@+id/batdenngu"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/batdenngu"
+        app:layout_constraintTop_toBottomOf="@+id/batdenngu" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="361dp"
+        android:layout_height="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/anhphongngu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

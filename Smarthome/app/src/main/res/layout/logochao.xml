@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Bắt đầu từ alpha = 0 -->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="534dp"
+        android:layout_height="449dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/logochao" />
+
+    <!-- Bắt đầu từ alpha = 0, ẩn ban đầu -->
+
+    <ImageView
+        android:id="@+id/chuchao"
+        android:layout_width="332dp"
+        android:layout_height="82dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748"
+        app:srcCompat="@drawable/chuchao" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="295dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:max="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chuchao"
+        app:layout_constraintVertical_bias="0.212"
+        android:alpha="0"/> <!-- Bắt đầu từ alpha = 0, ẩn ban đầu -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

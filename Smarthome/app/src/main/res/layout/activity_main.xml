@@ -1,0 +1,252 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView hiển thị độ ẩm -->
+
+    <!-- Nút bật/tắt LED -->
+
+    <!-- TextView hiển thị trạng thái LED -->
+
+    <!-- Thanh nhiệt kế (Temperature ProgressBar) -->
+
+    <!-- Hiển thị giá trị nhiệt độ -->
+
+    <!-- Thanh độ ẩm kế (Humidity ProgressBar) -->
+
+    <!-- Hiển thị giá trị độ ẩm -->
+
+
+    <Button
+        android:id="@+id/buttonphongchinh"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#2196F3"
+        android:text="Phòng chính"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <ProgressBar
+        android:id="@+id/doam"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="106dp"
+        android:max="100"
+        android:progressDrawable="@drawable/thanhbieuthi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="28dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@drawable/amke" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/gas" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nhietke" />
+
+    <ProgressBar
+        android:id="@+id/khiga"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="60dp"
+        android:max="100"
+        android:progressDrawable="@drawable/thanhkhigas"
+        app:layout_constraintBottom_toBottomOf="@+id/doam"
+        app:layout_constraintStart_toEndOf="@+id/doam"
+        app:layout_constraintTop_toTopOf="@+id/doam"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/doam1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Độ ẩm: --"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/khiga1"
+        app:layout_constraintStart_toEndOf="@+id/nhietdo1"
+        app:layout_constraintTop_toBottomOf="@+id/doam"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <ProgressBar
+        android:id="@+id/nhietdo"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="40dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="60dp"
+        android:max="100"
+        android:progressDrawable="@drawable/thanhnhietdo"
+        app:layout_constraintBottom_toBottomOf="@+id/doam"
+        app:layout_constraintEnd_toStartOf="@+id/doam"
+        app:layout_constraintTop_toTopOf="@+id/doam"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/khiga1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Khí gas: --"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doam1"
+        app:layout_constraintTop_toBottomOf="@+id/doam"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <TextView
+        android:id="@+id/nhietdo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nhiệt độ: --"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/doam1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doam"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <Button
+        android:id="@+id/buttonphongngu"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#2196F3"
+        android:text="Phòng ngủ"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonphongchinh"
+        app:layout_constraintStart_toEndOf="@+id/buttonphongchinh"
+        app:layout_constraintTop_toTopOf="@+id/buttonphongchinh"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttoncua"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#F44336"
+        android:text="Mở cửa"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonchithi"
+        app:layout_constraintStart_toEndOf="@+id/buttonchithi"
+        app:layout_constraintTop_toTopOf="@+id/buttonchithi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="219dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chulogo" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="315dp"
+        android:layout_height="204dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/buttonchithi"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#2196F3"
+        android:text="FILE DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <ImageView
+        android:id="@+id/bieutuongkhoacua"
+        android:layout_width="58dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/khoadong" />
+
+    <Button
+        android:id="@+id/luutru"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:text="Lưu trữ"
+        app:layout_constraintBottom_toTopOf="@+id/buttonchithi"
+        app:layout_constraintEnd_toEndOf="@+id/buttonchithi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonchithi" />
+
+    <Button
+        android:id="@+id/reset"
+        android:backgroundTint="#000000"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:text="OFF LINE"
+        app:layout_constraintStart_toEndOf="@+id/luutru"
+        app:layout_constraintTop_toTopOf="@+id/luutru" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

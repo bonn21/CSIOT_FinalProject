@@ -1,0 +1,17 @@
+<!-- circle_light_off.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Màu bên trong là trắng -->
+    <solid android:color="#FFFFFF"/>
+
+    <!-- Viền đen với độ dày 4dp -->
+    <stroke
+        android:width="4dp"
+        android:color="#000000"/> <!-- Màu đen -->
+
+    <!-- Kích thước hình tròn -->
+    <size
+        android:width="100dp"
+        android:height="100dp"/>
+</shape>

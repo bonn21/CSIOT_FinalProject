@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/batden1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#2196F3"
+        android:text="Bật đèn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <Button
+        android:id="@+id/batquat1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Bật quạt phòng khách"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/batden1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/batden1"
+        app:layout_constraintTop_toBottomOf="@+id/batden1"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageView
+        android:id="@+id/buttonquat1"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="Fan Icon"
+        android:src="@drawable/fan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toEndOf="@+id/batquat1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <ImageView
+        android:id="@+id/buttonquat2"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:contentDescription="Fan Icon"
+        android:src="@drawable/fan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toEndOf="@+id/batquat2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/den1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/circle_light_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="363dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191"
+        app:srcCompat="@drawable/anhphongkhach" />
+
+    <Button
+        android:id="@+id/batquat2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="Bật quạt khu bếp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/batquat1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/batquat1"
+        app:layout_constraintTop_toBottomOf="@+id/batquat1"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <Button
+        android:id="@+id/trove1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở về"
+        android:backgroundTint="#FF9800"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="327dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/chu1" />
+
+    <!-- Ban đầu là đèn tắt -->
+    android:contentDescription="Light status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
